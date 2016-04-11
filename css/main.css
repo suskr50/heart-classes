@@ -774,7 +774,7 @@ footer p{
 
     .announce-text-wrapper {
 
-        background-color:yellow;
+       
     }
 
 
@@ -841,13 +841,13 @@ footer p{
     /* =========== NewsLetter =========================================================== */
 
     .email-input{
-        width:49%;
+        width:47%;
         float:left;
-    }
+       }
 
     .newsletter-wrapper .btn {
 
-        width:49%;
+        width:47%;
         float:right;
     }
 
