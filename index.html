@@ -10,23 +10,26 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!--- Fonts --------------------------------- -->
     <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
 
-   <header>
-    <div class="logo">
-        <img src="img/logo.png">
-    </div>
 
+ <header>
+    <!-- <div class="logo">
+        <img src="img/logo.png">
+    </div> -->
+<!-- 
     <nav>
         <ul class="menu">
             <li><a href="classes/index.html">Classes</a></li>
@@ -37,15 +40,52 @@
         <div class="clear"></div>
 
     </nav>
+-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"> <img src="img/logo.png"></a>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-right">
+    <!-- <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li> -->
+    <li ><a href="#">CLASSES</a></li>
+    <li ><a href="#">SIGN UP</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Teacher Bios</a></li>
+    </ul>
+</li>
+<li><a href="#">FAQ</a></li>
+</ul>
+
+
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
 
 
 </header>
 
-<div class="main-content">
 
-    <article class="home-page">
-        <section class="hero-area">
-            <img src="img/hero.jpg" alt="Students Studing">
+
+<article class="home-page">
+    <section class="hero-area">
+        <img src="img/hero.jpg" alt="Students Studing">
+        <div class="main-content">
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -63,67 +103,92 @@
                 </div>
                 <div class="clear"></div>
                 <hr>
-            </section>
+            </div>
+        </section>
 
+        <div class="main-content">
             <section class="announcements">
+
+
                 <h1> Announcements </h1>
                 <div class="announce-wrapper" >
-                    <figure class="announce-pic">
-                        <a href="announcements/ann1.html"><img src="img/spagetti.jpg" alt="Spagetti"></a>
-                    </figure>
-                    <div class="announce-title">
-                        <a href="announcements/index.html"><h2> Spagetti Dinner Apr 22, 6:30pm </h2></a>
-                    </div>
-                    <div class="announce-text">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. 
-                        </p>
-                        <div class="read-more">
-                            <a href="announcements/index.html"><p>Read More </p></a>
+                    <div class="announce-pic">
+
+                        <figure >
+                         <a href="announcements/ann1.html"><img src="img/spagetti.jpg" alt="Spagetti"></a>
+                        </figure>
+                     </div>
+
+                    <div class="announce-article">
+                        <div class="announce-title">
+                            <a href="announcements/index.html"><h2> Spagetti Dinner Apr 22, 6:30pm </h2></a>
                         </div>
+                        <div class="announce-text">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. 
+                          
+                            <span class="read-more">
+                                <a href="announcements/index.html">Read More</a>
+                            </span> </p>
+                            </div> 
                     </div>
                 </div>
-                <div class="clear"></div>
+
                  <div class="announce-wrapper" >
-                    <figure class="announce-pic">
-                        <a href="announcements/index.html"><img src="img/registration.jpg" alt="Spagetti"></a>
-                    </figure>
-                    <div class="announce-title">
-                        <a href="announcements/index.html"><h2> Fall Registration </h2></a>
-                    </div>
-                    <div class="announce-text">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. 
-                        </p>
-                        <div class="read-more">
-                            <a href="announcements/index.html"><p>Read More </p></a>
+                    <div class="announce-pic">
+
+                        <figure >
+                         <a href="announcements/ann1.html"><img src="img/basketball.jpg" alt="Basketball"></a>
+                        </figure>
+                     </div>
+
+                    <div class="announce-article">
+                        <div class="announce-title">
+                            <a href="announcements/index.html"><h2> Basketball Sign Ups </h2></a>
                         </div>
+                        <div class="announce-text">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. 
+                           
+                            <span class="read-more">
+                                <a href="announcements/index.html">Read More</a>
+                            </span> </p>
+                            </div>
                     </div>
                 </div>
-                <div class="clear"></div>
-                <div class="announce-wrapper" >
-                    <figure class="announce-pic">
-                        <a href="announcements/index.html"><img src="img/basketball.jpg" alt="Spagetti"></a>
-                    </figure>
-                    <div class="announce-title">
-                        <a href="announcements/index.html"><h2> Basketball Sign-ups </h2></a>
-                    </div>
-                    <div class="announce-text">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. 
-                        </p>
-                        <div class="read-more">
-                            <a href="announcements/index.html"><p>Read More </p></a>
+
+     <div class="announce-wrapper" >
+                    <div class="announce-pic">
+
+                        <figure >
+                         <a href="announcements/ann1.html"><img src="img/registration.jpg" alt="Basketball"></a>
+                        </figure>
+                     </div>
+
+                    <div class="announce-article">
+                        <div class="announce-title">
+                            <a href="announcements/index.html"><h2> Fall Registration </h2></a>
                         </div>
+                        <div class="announce-text">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. 
+                           
+                            <span class="read-more">
+                                <a href="announcements/index.html">Read More</a>
+                            </span> </p>
+                            </div>
                     </div>
                 </div>
-            </section>
+
+                 
+
+            
             <div class="clear"></div>
 
         </article>
@@ -134,28 +199,34 @@
                 <h1> Sign Up for our Newsletter </h1>
                 <input type="text" class="email-input" >
                 <input type="submit" class="btn" value="Sign Up">
+
             </section>
             <div class="clear"></div>
         </aside>
     </div>
     <footer>
-    <p> Website by <a href="http://skswebdev.com/">skswebdev</a></p>
+        <p> Website by <a href="http://skswebdev.com/">skswebdev</a></p>
     </footer>
 
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
-    </html>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>

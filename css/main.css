@@ -163,8 +163,8 @@ a {
 
 
 .main-content {
-    width:94%;
-    padding:0 6% 0 4%;
+    width:96%;
+    padding:0 4%;
    
 
 }
@@ -173,6 +173,8 @@ a {
     width:100%;
     height:auto;
 }
+
+
 
 .btn {
     background-color:#c0d62d;
@@ -205,18 +207,17 @@ header {
 
     
     background-color:#c0d62d;
-    padding-top:15px;
-
+  
     
 }
 
-.logo {
+/*.logo {
     width:90%;
     margin:0 auto;
     padding-bottom:10px;
 
-}
-nav {
+}*/
+/*.navbar-custom {
     width:100%;
     background-color:#dddddd;
     background-color:white;
@@ -224,6 +225,56 @@ nav {
 
 nav ul {
     margin-top:10px;
+}*/
+
+.navbar  {
+   background-color:#c0d62d;
+   border:none;
+   margin-bottom:0;
+}
+
+
+.navbar-nav {
+    margin-top:10px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.dropdown-menu>li>a ,
+.navbar-default .navbar-nav>li>a {
+    color:#00549e;
+    font-size:1.125rem;
+    font-family: 'Playfair Display', serif;
+    text-align:center;  /* remove */
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+   color:#ff00ff;
+}
+
+.navbar-brand {
+    width:80%;
+}
+
+.navbar-brand img {
+    width:100%;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+   border:4px solid orange; /* remove bottom */
+  /* background-color: #c0d62d; *//* add to bottom */
+   color:#00549e;
+}
+
+.navbar-default .navbar-toggle {
+    background-color:white;
+    border-color: grey;
+}
+
+#bs-example-navbar-collapse-1 {
+background-color:#e1e1e1;
+
 }
 
 .menu {
@@ -274,9 +325,6 @@ nav ul {
     text-align:center;
      margin:10px 0;
 
-
-
-
 }
 
 .class-cta .btn,
@@ -290,35 +338,89 @@ nav ul {
 
 
 article.home-page {
-    width:96%;
-    padding:0 2%;
+   width:100%;
 }
 
 
 
-/* =========== Announcements =========================================================== */
-.announcements {
-    
-}
+/* =========== ANNOUNCEMENTS =========================================================== */
 
-.announcements h1 {
-      text-transform:uppercase;
-}
 
 .announcements h2:hover {
     color:#ff00ff;
-   
+    
 }
-.announce-wrapper {
+
+
+.announcements {
     width:100%;
 }
 
+.announce-wrapper { 
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
 
+}
 
 .announce-pic {
+    flex:1;
+
+    
+}
+
+.announce-pic> figure {
+   margin:1em 0;
+   width:100%;
+}
+
+.announce-article {
+ flex:2;
+ padding:0 20px;
+}
+
+
+
+
+}
+
+.announce-figure {
+    width:100%;
+}
+
+.announce-pic figure img {
+    width:100%;
+}
+
+.announcements h1 {
+  text-transform:uppercase;
+  text-align:center;
+}
+
+
+.announce-text {
+    display:none;
+}
+
+.read-more {
+    float:right;
+}
+
+
+.read-more a{
+    color:#1d8dcd;
+    text-decoration:none;
+    font-size:.75em;
+}
+
+
+
+/*.announce-pic {
    width:33%;
    float:left;
    margin:0 auto;
+   padding:5px 0;
 }
 
 .announce-pic img {
@@ -350,14 +452,14 @@ article.home-page {
 .announcement-page .announce-text{
    display:block;
 }
-
+*/
 
 
  /* =========== Class List =========================================================== */
 }
 .class-list-page {
     width:100%;
-    background-color:pink;
+ 
 }
 
 .date-time h2 {
@@ -571,6 +673,10 @@ footer p{
     float:right;
 }
 
+footer a {
+    color:#EEEEEE;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -672,62 +778,41 @@ footer p{
         font-size:1rem;
 
     }
+ /* =========== HEADER =========================================================== */
 
-  header {
-
-    height:50px;
+header {
     padding: 20px 0;
     background-color:#c0d62d;
     margin-bottom:15px;
 }
 
-    .logo {
-        width:35%;
-        float:left;
-        margin-top:5px;
-        margin-left:30px;
-    }
-    nav {
-        width:60%;
-        float:right;
-        background-color:#c0d62d;
-    }
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.dropdown-menu>li>a ,
+.navbar-default .navbar-nav>li>a {
+    text-align:left;  
+}
 
-    nav ul {
-       margin-top:10px;
-    }
+.navbar-default .navbar-nav>li>a:hover {
+ color:#ff00ff;
+}
 
-    .menu {
-        list-style: none;
-        float:right;
-      
-        
-       
-    }
-    .menu li {
-        list-style-type:none;
-        display:inline; 
-        margin-right:30px;
-        border:none;
-        font-size:1.125rem;
-        font-family: 'Playfair Display', serif;
-    }
+.navbar-brand {
+    width:100%;
+}
 
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+   background-color: #c0d62d; 
+   color:#00549e;
+}
 
-    .menu li a {
-        color:#00549e;
+#bs-example-navbar-collapse-1 {
+    background-color:#c0d62d;
 
-    }
+}
 
-    .menu li a:hover {
-        color:#ff00ff;
-    }
-
-
-
-
-
-    /* =========== HEADER =========================================================== */
+    /* =========== CALL TO ACTION =========================================================== */
 
     .class-cta {
         width:49%;
@@ -741,48 +826,14 @@ footer p{
         margin-top:0px;
     }
 
+   /* =========== ANNOUNCMENT =========================================================== */
 
-    .announce-pic {
-        width:36%;
-        float:left;
-        margin:0 auto;
-        padding:20px;
-    }
- /* =========== HEADER =========================================================== */
-    .announce-title {
-        width:55%;
-        float:left;
-        text-align:center;
-    }
-
-    .announce-text {
-        display:block;
-    }
-
-
-    .read-more {
-        float:right;
-    }
-
-    .read-more p {
-        color:#00549e;
-    }
-
-    .announcement-page .announce-pic {
-        float:left;
-        width:50%;
-    }
-
-    .announce-text-wrapper {
-
-       
-    }
-
-
-    .announce-text-wrapper .announce-text {
-        width:100%;
-        clear:both;
-    }
+.announcements h1 {
+   text-align:left;
+}
+.announce-text {
+    display:block;
+}
 
     /* =========== About =========================================================== */
 
@@ -901,11 +952,11 @@ float:left;
     }
 
     h1 {
-        font-size:2.25rem;
+        font-size:2rem;
     }
 
     h2 {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
 
     }
 
@@ -918,9 +969,7 @@ float:left;
         color:#c0d62d;
     }
 
-  /* =========== Announcement =========================================================== */
-
-
+ 
 
 
     /* =========== About =========================================================== */
