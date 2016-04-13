@@ -10,47 +10,59 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!--- Fonts --------------------------------- -->
+    <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-
-
 </head>
+
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<!-- Add your site or application content here -->
 
-<header>
-    <div class="logo">
-        <a href="../index.html"><img src="../img/logo.png"></a>
-    </div>
-
-    <nav>
-        <ul class="menu">
-            <li><a href="../classes/index.html">Classes</a></li>
-            <li><a href="../signup/index.html">Sign Up</a></li>
-            <li><a href="../about/index.html">About</a></li>
-            <li><a href="../about/faq.html">FAQ</a></li>
-        </ul> 
-        <div class="clear"></div>
-
+ <header>
+   <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img src="../img/logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li> -->
+                    <li ><a href="../classes/index.html">CLASSES</a></li>
+                    <li ><a href="../signup/index.html">SIGN UP</a></li>
+                    <li class="dropdown">
+                        <a href="../about/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/index.html">Contact</a></li>
+                            <li><a href="#teachers">Teacher Bios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
-
-
 </header>
 
 <div class="main-content"> 
 
     <article class="about-page">
 
-       <section class="contact-wrapper">
+       <section id="contact" class="contact-wrapper">
           <div class="address">
              <h1> Contact Us </h1>
              <p><strong><i class="fa fa-envelope"></i> Email: &#32</strong>info@heartclass.com</p>
@@ -66,7 +78,7 @@
 
 
 
-     <section class="meet-the-team">
+     <section id="teachers" class="meet-the-team">
         <hr>
         <h1>Meet the Teachers</h1>
         <div class="bio">

@@ -262,7 +262,7 @@ nav ul {
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
 .navbar-default .navbar-nav>.active>a:hover {
-   border:4px solid orange; /* remove bottom */
+   border-bottom:4px solid orange; /* remove bottom */
   /* background-color: #c0d62d; *//* add to bottom */
    color:#00549e;
 }
