@@ -357,7 +357,6 @@ article.home-page {
 }
 .class-list-page {
     width:100%;
-    background-color:pink;
 }
 
 .date-time h2 {
@@ -917,10 +916,6 @@ float:left;
         font-size 1rem;
         color:#c0d62d;
     }
-
-  /* =========== Announcement =========================================================== */
-
-
 
 
     /* =========== About =========================================================== */
