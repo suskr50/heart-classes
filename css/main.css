@@ -177,8 +177,8 @@ a {
 
 
 .btn {
-    background-color:#c0d62d;
-    color:#00549e;
+    background-color:pink;
+    color:$main-menu;
     font-size:1.125rem;
     font-weight:bold;
     text-transform:uppercase;
@@ -207,6 +207,7 @@ header {
 
     
     background-color:#c0d62d;
+    padding-bottom:20px;
   
     
 }
@@ -341,7 +342,14 @@ article.home-page {
    width:100%;
 }
 
+/* =========== Single ANNOUNCEMENTS =========================================================== */
 
+.single-announcement-page {
+    
+    text-align:justify;
+
+    
+}
 
 /* =========== ANNOUNCEMENTS =========================================================== */
 
@@ -783,7 +791,7 @@ footer a {
 header {
     padding: 20px 0;
     background-color:#c0d62d;
-    margin-bottom:15px;
+   
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a,
@@ -825,6 +833,22 @@ header {
         float:right;
         margin-top:0px;
     }
+
+/* =========== Single ANNOUNCEMENTS =========================================================== */
+
+
+.single-announce-pic {
+    
+    width:37%;
+    float:left;
+
+
+}
+.single-announce-pic img {
+    width:95%;
+   
+    margin: 0 10px 10px 0;
+}
 
    /* =========== ANNOUNCMENT =========================================================== */
 
