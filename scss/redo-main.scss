@@ -1,0 +1,59 @@
+$heading1-color:#f89924;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-justify($values) {
+	-webkit-box-pack: $values;
+		-moz-box-pack: $values;
+		-ms-flex-pack: $values;
+		-webkit-justify-content: $values;
+		justify-content:$values;
+}
+
+@mixin flex-align($values) {
+	
+	-webkit-box-align: $values;
+	-moz-box-align: $values;/* OLD… */
+	-ms-flex-align: $values; /* You know the drill now… */
+	-webkit-align-items: $values;
+	align-items: $values;
+}
+
+
+
+#teachers2 {
+	
+	.bio-wrap {
+		
+		@include flexbox();
+		@include flex-justify(space-around);
+		@include flex-align(center);
+		flex-flow:row wrap;
+		.bio {
+			min-width:30%;
+
+			.bio-pic {
+				max-width:60%;
+				margin:0 auto;
+				img {
+					width:100%;
+				}
+			}
+			.bio-title {
+				text-align:center;
+				p {
+					margin-bottom:0;
+				}
+				
+			}
+		}
+	}
+}
+
+

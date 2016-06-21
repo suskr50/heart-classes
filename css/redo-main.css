@@ -1,0 +1,37 @@
+@charset "UTF-8";
+#teachers2 .bio-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -moz-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /* OLD… */
+  -ms-flex-align: center;
+  /* You know the drill now… */
+  -webkit-align-items: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#teachers2 .bio-wrap .bio {
+  min-width: 30%;
+}
+#teachers2 .bio-wrap .bio .bio-pic {
+  max-width: 60%;
+  margin: 0 auto;
+}
+#teachers2 .bio-wrap .bio .bio-pic img {
+  width: 100%;
+}
+#teachers2 .bio-wrap .bio .bio-title {
+  text-align: center;
+}
+#teachers2 .bio-wrap .bio .bio-title p {
+  margin-bottom: 0;
+}
