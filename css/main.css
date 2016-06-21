@@ -177,7 +177,7 @@ a {
 
 
 .btn {
-    background-color:pink;
+    background-color:#c0d62d;
     color:$main-menu;
     font-size:1.125rem;
     font-weight:bold;
@@ -578,27 +578,27 @@ article.home-page {
 
 
 #team-img-teacher1 {
-    background-image:url('../img/teacher1.jpg');
+    background-image:url('../img/new-teacher1.jpg');
 }
 
 #team-img-teacher2 {
-    background-image:url('../img/teacher2.jpg');
+    background-image:url('../img/new-teacher2.jpg');
 }
 
 #team-img-teacher3 {
-    background-image:url('../img/teacher3.jpg');
+    background-image:url('../img/new-teacher3.jpg');
 }
 
 #team-img-teacher4 {
-    background-image:url('../img/teacher4.jpg');
+    background-image:url('../img/new-teacher4.jpg');
 }
 
 #team-img-teacher5 {
-    background-image:url('../img/teacher5.jpg');
+    background-image:url('../img/new-teacher5.jpg');
 }
 
 #team-img-teacher6 {
-    background-image:url('../img/teacher6.jpg');
+    background-image:url('../img/new-teacher6.jpg');
 }
 
 .team-img{
