@@ -1,4 +1,22 @@
 @charset "UTF-8";
+#team-img-teacher6 {
+  background-image: url("../img/new-teacher6.jpg");
+}
+
+.team-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+#teachers2 .title {
+  margin: 50px 0;
+}
 #teachers2 .bio-wrap {
   display: -webkit-box;
   display: -moz-box;
@@ -23,7 +41,8 @@
   min-width: 30%;
 }
 #teachers2 .bio-wrap .bio .bio-pic {
-  max-width: 60%;
+  max-width: 70%;
+  min-width: 60%;
   margin: 0 auto;
 }
 #teachers2 .bio-wrap .bio .bio-pic img {

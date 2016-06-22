@@ -25,25 +25,51 @@ $heading1-color:#f89924;
 	align-items: $values;
 }
 
+#team-img-teacher6 {
+    background-image:url('../img/new-teacher6.jpg');
+}
+
+.team-img{
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:30%;
+    padding-bottom:30%;
+    float:left;
+    margin-right:20px;
+    border:1px solid #ccc;
+}
 
 
 #teachers2 {
-	
+
+	.title {
+			margin:50px 0;
+			
+
+	}
+
 	.bio-wrap {
 		
 		@include flexbox();
 		@include flex-justify(space-around);
 		@include flex-align(center);
 		flex-flow:row wrap;
+
+
+
+
 		.bio {
 			min-width:30%;
 
 			.bio-pic {
-				max-width:60%;
+				max-width:70%;
+				min-width:60%;
 				margin:0 auto;
 				img {
 					width:100%;
 				}
+
 			}
 			.bio-title {
 				text-align:center;
